@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Menus.FirstHealthPointMenu"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <VBox alignment="CENTER">
+            <Label text="شما در این جا می‌توانید تنظیم‌کند که">
+                <font >
+                    <Font size="20"/>
+                </font>
+            </Label>
+            <Label text="می‌خواهید هنگام آغاز بازی پکمن چند جان بدارد" >
+                <font>
+                    <Font size="20" />
+                </font>
+            </Label>
+            <GridPane fx:id="numberGridPane" alignment="CENTER">
+                <Label text="24" />
+            </GridPane>
+            <HBox alignment="CENTER">
+                <Button text="افزودن" onMouseClicked="#increaseByMouse" onKeyPressed="#increaseByKey" />
+                <Button text="کـاستن" onMouseClicked="#decreaseByMouse" onKeyPressed="#decreaseByKey" />
+            </HBox>
+            <Label text="  "/>
+            <GridPane fx:id="messageGridPane" alignment="CENTER">
+                <Label text=" :) "/>
+            </GridPane>
+        </VBox>
+    </center>
+    <stylesheets>
+        <URL value="@buttonCss.css"/>
+    </stylesheets>
+</BorderPane>

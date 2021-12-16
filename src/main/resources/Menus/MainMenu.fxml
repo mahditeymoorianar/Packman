@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Menus.MainMenu"
+      prefHeight="400.0" prefWidth="700.0">
+
+        <!--
+        <HBox alignment="CENTER" fx:id="topHBox">
+            <Label text="بیشترین امتیاز شما : " textAlignment="RIGHT" alignment="TOP_RIGHT" BorderPane.alignment="TOP_RIGHT"/>
+            <Label text=""/>
+            <Label text="نام کاربری : " alignment="TOP_LEFT" BorderPane.alignment="TOP_LEFT"  />
+        </HBox>-->
+        <VBox alignment="CENTER" layoutY="100" layoutX="250" prefWidth="200" >
+            <Label text="***منوی اصلی***">
+                <font>
+                    <Font size="24" />
+                </font>
+            </Label>
+
+            <Button text=" آغازیدن بازی نو " alignment="CENTER" onMouseClicked="#newGameByMouse"
+                    onKeyPressed="#newGameByKey" prefWidth="250" styleClass="pressed" />
+
+            <Button text=" بازی ذخیره شده " alignment="CENTER" onMouseClicked="#newGameByMouse"
+                    onKeyPressed="#newGameByKey" prefWidth="250" />
+
+            <Button text=" دیدن امـتیاز ها " alignment="CENTER" onMouseClicked="#seeScoresByMouse"
+                    onKeyPressed="#seeScoresByKey" prefWidth="250" />
+
+            <Button text="   تنظیــــمات   " alignment="CENTER" onMouseClicked="#settingsMenuByMouse"
+                    onKeyPressed="#settingsMenuByKey" prefWidth="250" />
+
+            <Button text="خروج از حساب کاربری" alignment="CENTER" onMouseClicked="#quitAccountByMouse"
+                    onKeyPressed="#quitAccountByKey" prefWidth="250" />
+
+
+        </VBox>
+
+    <stylesheets>
+        <URL value="@buttonCss.css"/>
+    </stylesheets>
+</Pane>

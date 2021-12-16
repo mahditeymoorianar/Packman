@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Menus.HelpMenu"
+            prefHeight="600.0" prefWidth="1000.0">
+
+    <center>
+        <VBox alignment="CENTER">
+            <Label text="در محیط بازی با دکمه‌های چهارگانه‌ی جهت سمت و سوی رفتن پکمن را تنظیم‌کنید" />
+            <Label text="با دکمه‌ی SPACE بازی را نگه‌دارید و با فشدن هر دکمه‌ای جز SPACE بازی را ادامه دهید" />
+            <Label text="با فشردن دکمه‌ی M صدای بازی را قطع یا وصل کنید" />
+            <Label text="با زدن دکمه‌ی ESCAPE از بازی بیرون بروید امتیاز شما به طور خودکار ثبت می‌شود" />
+            <Label text="در هنگام آغاز بازی نو با دکمه‌های چپ و راست میان نقشه‌ها جا به جا شوید و با زدن ENTER بازی را بیاغازید"/>
+            <Label text="می‌توانید با رفتن به تنظیمات در منوی کاربری حساب خودتان ، این کار ها را بکنید" />
+            <Label text="شمار جان‌های آغازین پکمن را در حساب کاربری خود تنظیم‌کنید ، گذرواژه‌ی خود را بویرایید ، " />
+            <Label text="حساب کاربری خود را پــاک‌‌کـنیــد ، نقشه‌های بازی را شخصی‌سازی کنید" />
+            <Label text="در بخش شخصی‌سازی نقشه‌ها می‌توانید نقشه‌ای دلخواه را بگزینید و ENTER را بزنید و آن را در حساب کاربری خودتان بینباری(ذخیره‌کنید) و"/>
+            <Label text="می‌تواید با دکمه‌ی SPACE به نقشه‌ی پیشنهادی دیگری بروید و با دکمه‌ی ESCAPE از آن منو برگردید"/>
+            <Label text="امیدوارم که خوشتان بیاید" />
+            <Label text="می‌توانید این برنامه را از این جا بگیرید"/>
+            <Hyperlink text="https://github.com/mahditeymoorianar/Packman/" onMouseClicked="#goToTheLink"/>
+            <Button text="برگشتن" alignment="CENTER" onMouseClicked="#returnByMouse" onKeyPressed="#returnByKey"/>
+        </VBox>
+    </center>
+
+    <stylesheets>
+        <URL value="@buttonCss.css"/>
+    </stylesheets>
+</BorderPane>

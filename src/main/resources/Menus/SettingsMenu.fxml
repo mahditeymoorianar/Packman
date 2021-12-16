@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Menus.SettingsMenu"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <VBox alignment="CENTER">
+            <Button text="  ویراســتن گذرواژه  " onMouseClicked="#changePasswordByMouse" onKeyPressed="#changePasswordByKey" />
+            <Button text="  شخصـی سازی نقشه‌ها  " onMouseClicked="#PersonalizeByMouse" onKeyPressed="#PersonalizeByKey" />
+            <Button text="  شمار جان‌های آغازین " onMouseClicked="#firstHealthPointByMouse" onKeyPressed="#firstHealthPointByKey" />
+            <Button text="   بـــــرگـــشـــت  " onMouseClicked="#cancelByMouse" onKeyPressed="#cancelByKey" />
+            <Button text="حــذف حسـاب کـاربـری " onMouseClicked="#deleteAccountByMouse" onKeyPressed="#deleteAccountByKey" />
+        </VBox>
+    </center>
+
+    <stylesheets>
+        <URL value="@buttonCss.css"/>
+    </stylesheets>
+</BorderPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.sun.javafx.webkit.theme.RenderThemeImpl.FormButton?>
+<?import com.sun.javafx.webkit.theme.RenderThemeImpl.FormCheckBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Menus.SignUpMenu"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+
+    </top>
+    <center>
+        <VBox alignment="CENTER">
+            <Label text="منوی عضویت" alignment="CENTER" mouseTransparent="true" textAlignment="CENTER" >
+                <font>
+                    <Font size="24"/>
+                </font>
+            </Label>
+            <Label text=""/>
+            <HBox alignment="CENTER">
+                <GridPane fx:id="usernameGridPane">
+                    <TextField text="username" />
+                </GridPane>
+                <Label text="نام کاربری :      "/>
+
+            </HBox>
+            <HBox alignment="CENTER">
+                <GridPane fx:id="passwordGridPane">
+                    <PasswordField />
+                </GridPane>
+                <Label text="گذرواژه :          "/>
+            </HBox>
+            <HBox alignment="CENTER">
+                <GridPane fx:id="passwordReputationGridPane">
+                    <PasswordField/>
+                </GridPane>
+                <Label text="تکرار گذرواژه :  "/>
+            </HBox>
+
+            <Label text=""/>
+
+            <HBox alignment="CENTER" >
+                <Button text="عضویت" onMouseClicked="#signUpByMouse" onKeyPressed="#signUpByKey"  prefWidth="90" />
+                <Label text="             "/>
+                <Button text="برگشتن" onMouseClicked="#cancelByMouse" onKeyPressed="#cancelByKey"  prefWidth="90" />
+            </HBox>
+
+            <Label text=""/>
+            <GridPane fx:id="messageGridPane" alignment="CENTER">
+                <Label text=""/>
+            </GridPane>
+            <Label text=""/>
+
+            <GridPane fx:id="checkboxes" alignment="CENTER">
+                <CheckBox fx:id="loginAfterIt" text="پس از عضویت وارد حسابم شو"  />
+            </GridPane>
+
+        </VBox>
+    </center>
+
+    <stylesheets>
+        <URL value="@buttonCss.css"/>
+    </stylesheets>
+</BorderPane>

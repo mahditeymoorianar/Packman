@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Menus.LoginMenu"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <VBox alignment="CENTER">
+            <Label text="منوی ورود به حساب کاربری">
+                <font>
+                    <Font size="24"/>
+                </font>
+            </Label>
+            <Label text=""/>
+            <HBox alignment="CENTER">
+                <GridPane fx:id="usernameGridPane">
+                    <TextField text="username" />
+                </GridPane>
+                <Label text="نام کــاربری :  "/>
+            </HBox>
+            <HBox alignment="CENTER">
+                <GridPane fx:id="passwordGridPane">
+                    <PasswordField text=""/>
+                </GridPane>
+                <Label text="گــــــذرواژه :  "/>
+            </HBox>
+            <Label text=""/>
+            <GridPane fx:id="stayInGridPane" alignment="CENTER">
+                <CheckBox text="درون حسابم بمان" alignment="CENTER"/>
+            </GridPane>
+            <Label text=""/>
+            <GridPane alignment="CENTER" fx:id="messageGridPane">
+                <Label text=""/>
+            </GridPane>
+            <Label text=""/>
+
+            <HBox alignment="CENTER">
+                <Button text="برگشتن" alignment="CENTER" onMouseClicked="#cancelByMouse"
+                        onKeyPressed="#cancelByKey"  prefWidth="90" />
+                <Label text="          "/>
+                <Button text=" ورود " alignment="CENTER" onMouseClicked="#loginByMouse"
+                        onKeyPressed="#loginByKey"  prefWidth="90" />
+            </HBox>
+
+
+        </VBox>
+    </center>
+
+    <stylesheets>
+        <URL value="@buttonCss.css"/>
+    </stylesheets>
+</BorderPane>

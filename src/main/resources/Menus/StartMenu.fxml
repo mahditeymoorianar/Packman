@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Text?>
+<?import com.sun.javafx.scene.control.skin.EmbeddedTextContextMenuContent?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Menus.StartMenu"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <VBox alignment="CENTER">
+            <Label text="به بازی بسیار جذّاب پکمن ساخته‌ی مهدی تیموری انار خوش آمدید!"/>
+            <HBox alignment="CENTER">
+                <Button text="عضویت" onMouseClicked="#singUp" onKeyPressed="#signUpByEnter"
+                      styleClass="#Button:pressed" onMouseEntered="#cursorToHand" prefWidth="90"  />
+                <Label text="               "/>
+                <Button text="ورود" onMouseClicked="#signIn" onKeyPressed="#signInByEnter"
+                       styleClass="#Button:hover" onMouseEntered="#cursorToHand" prefWidth="90" />
+            </HBox>
+            <Label text=""/>
+            <Label text=""/>
+            <Label text=""/>
+            <Label text="بازی فوری (بی نیاز به ساختن حساب کاربری)" onMouseClicked="#fastGame"/>
+            <Label text=""/>
+            <Label text=""/>
+            <Label text="راهنما" onMouseClicked="#openHelpMenu" />
+
+            <Label text=""/>
+            <Hyperlink text="دیدن و بارگیری (دانلود) از گیت‌هاب" onMouseClicked="#goToTheLink"/>
+        </VBox>
+    </center>
+
+    <stylesheets>
+        <URL value="@buttonCss.css"/>
+    </stylesheets>
+</BorderPane>
